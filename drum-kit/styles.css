@@ -4,4 +4,27 @@ body {
   background-repeat: no-repeat;
   width: 100vw;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
+
+.key {
+  width: 60px;
+  height: 60px;
+  background-color: green;
+}
+
+.key-letter {
+  font-size: 1.5rem;
+  color: #fff;
+  text-align: center;
+}
+
+.key-description {
+  font-size: 0.75rem;
+  color: yellow;
+  text-align: center;
+}
+
+

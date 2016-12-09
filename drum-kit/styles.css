@@ -1,6 +1,9 @@
 body {
   background-image: url('assets/background.png');
   background-repeat: repeat;
+}
+
+.keys {
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -9,19 +12,29 @@ body {
 }
 
 .key {
-  width: 60px;
-  height: 60px;
-  background-color: green;
+  width: 8%;
+  border: 1px solid #f9396f;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.20);
+  transition: all 0.07s;
 }
 
 .key-letter {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   color: #fff;
   text-align: center;
 }
 
 .key-description {
-  font-size: 0.75rem;
-  color: yellow;
+  font-size: 0.5rem;
+  color: #fee233;
   text-align: center;
+  text-transform: uppercase;
+  font-family: helvetica;
+}
+
+.playing {
+  background-color: #f9396f;
+  background-color: rgba(249, 57, 111, 1.00);
+  transform: scale(0.9);
 }

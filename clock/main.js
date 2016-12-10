@@ -7,14 +7,17 @@ const hourHand = document.querySelector('.hour-hand');
 
 function setTime() {
   const now = new Date();
+
   const seconds = now.getSeconds();
-  const minutes = now.getMinutes();
-  const hours = now.getHours();
-  const secondsDegrees = (seconds / 60) * 360;
-  const minutesDegrees = (minutes / 60) * 360;
-  const hoursDegrees = (hours / 12) * 360;
+  const secondsDegrees = ((seconds / 60) * 360) + 90;
   secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
+
+  const minutes = now.getMinutes();
+  const minutesDegrees = ((minutes / 60) * 360) + 90;
   minuteHand.style.transform = `rotate(${minutesDegrees}deg)`;
+
+  const hours = now.getHours();
+  const hoursDegrees = ((hours / 12) * 360) + 90;
   hourHand.style.transform = `rotate(${hoursDegrees}deg)`;
 }
 

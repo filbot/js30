@@ -27,6 +27,9 @@ body {
   background-color: green;
   transform-origin: 100%;
   transform: rotate(90deg);
+}
+
+.transition {
   transition: all 0.05s;
   transition-timing-function: cubic-bezier(0, 3.1, 0.28, 0.6);
 }

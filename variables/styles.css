@@ -1,5 +1,5 @@
 :root {
-  --color: #000;
+  --color: #ffc600;
   --blur: 0px;
 }
 
@@ -11,6 +11,10 @@ body {
   justify-content: center;
   align-items: center;
   font-family: 'helvetica neue'
+}
+
+.highlight {
+  color: var(--color);
 }
 
 .controls {
@@ -33,10 +37,15 @@ body {
 .logo {
   position: absolute;
   z-index: 2;
-  height: 300px;
-  width: 300px;
+  margin-top: 1rem;
+  height: 250px;
+  width: 250px;
   left: 50%;
-  transform: translateX(-150px);
+  transform: translateX(-125px);
+}
+
+.logo svg {
+  fill: var(--color);
 }
 
 .scenery {

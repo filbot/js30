@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Variables</title>
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link href="styles.css" rel="stylesheet">
 </head>
+
 <body>
-  <h1>Update variables in CSS</h1>
+  <h1 class="heading">Live update <span class="color-wrapper">CSS</span> variables!</h1>
+  <div class="controls">
+    <div class="control-blur">
+      <label for="blur">Blur:</label>
+      <input type="range" name="blur" min="0" max="100" value="10" data-sizing="px" />
+    </div>
+    <div class="control-color">
+      <label for="base">Color:</label>
+      <input type="color" name="base" value="#000" />
+    </div>
+  </div>
+  <div class="image-container">
+    <img class="logo" src="assets/hipster-logo.png" />
+  </div>
 </body>
 <script src="main.js"></script>
+
 </html>

@@ -14,3 +14,13 @@
 .exercise img {
   width: 50vw;
 }
+
+.exercise a {
+  text-decoration: none;
+  color: #333;
+}
+
+.exercise a:hover {
+  text-decoration: underline;
+  color: #f84d7a;
+}

@@ -72,3 +72,8 @@ body {
   flex: 5;
   font-size: 40px;
 }
+
+p {
+  font-family: helvetica;
+  text-transform: uppercase;
+}

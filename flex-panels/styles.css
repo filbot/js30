@@ -1,4 +1,74 @@
 body {
-  background-image: url('assets/background.png');
-  background-repeat: repeat;
+  margin: 0;
+}
+
+.panels {
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+}
+
+.panel-1 {
+  background-image: url(assets/panel-1.jpg);
+}
+
+.panel-2 {
+  background-image: url(assets/panel-2.jpg);
+}
+
+.panel-3 {
+  background-image: url(assets/panel-3.jpg);
+}
+
+.panel-4 {
+  background-image: url(assets/panel-4.jpg);
+}
+
+.panel-5 {
+  background-image: url(assets/panel-5.jpg);
+}
+
+.panel {
+  color: #fff;
+  font-size: 20px;
+  background-size: cover;
+  background-position: center;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  transition:
+    font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
+    flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
+    background 0.2s;
+}
+
+.panel > * {
+  transition: transform 0.5s;
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.panel > *:first-child {
+  transform: translateY(-100%);
+}
+
+.panel.open-active > *:first-child {
+  transform: translateY(0);
+}
+
+.panel > *:last-child {
+  transform: translateY(100%);
+}
+
+.panel.open-active > *:last-child {
+  transform: translateY(0);
+}
+
+.panel.open {
+  flex: 5;
+  font-size: 40px;
 }

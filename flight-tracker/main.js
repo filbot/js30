@@ -10,18 +10,6 @@ var myInit = { method: 'GET',
 
 const flightDataArray = [];
 
-
-fetch(flightDataArray, myInit).then(function(response) {
-  if(response.ok) {
-    response.blob().then(function(myBlob) {
-      console.log(myblob);
-    });
-  } else {
-    console.log('Network response was not ok.');
-  }
-})
-.catch(function(error) {
-  console.log('There has been a problem with your fetch operation: ' + error.message);
-});
-
-
+fetch(endpoint, myInit)
+  .then(blob => blob.json())
+  .then(data => citiesArray.push(...data))

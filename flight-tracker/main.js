@@ -14,7 +14,7 @@ const flightDataArray = [];
 fetch(flightDataArray, myInit).then(function(response) {
   if(response.ok) {
     response.blob().then(function(myBlob) {
-      flightDataArray.push(...myBlob);
+      console.log(myblob);
     });
   } else {
     console.log('Network response was not ok.');
